@@ -1,0 +1,24 @@
+{
+  "name": "Spider senses",
+  "version": "1.0",
+  "description": "whatevr",
+  "permissions": [
+      "declarativeContent",
+      "storage",
+      "activeTab"
+  ],
+  "background": {
+    "scripts": ["background.js"],
+    "persistent": false
+  },
+  "options_page": "options.html",
+  "page_action": {
+    "default_popup": "index.html",
+    "default_icon": "spoderman.png"
+  },
+  "icons": {
+      "128": "spoderman.png"
+  },
+  "manifest_version": 2
+
+}
