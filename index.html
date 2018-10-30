@@ -1,22 +1,36 @@
-<!-- ================================= Simple Greeting Dashboard ================================= //-->
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <style>
-      button {
-        height: 30px;
-        width: 30px;
-        outline: none;
-      }
-    </style>
-  <meta charset="utf-8" />
-  <title>Simple Greeting Dashboard</title>
-  <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <title>Spider Senses</title>
+    <meta charset="utf-8"/>
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css"/>
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
 </head>
 <body>
-   <!-- My code will go here -->
-   <button id="changeColor">Test</button>
-   <script src="background.js"></script>
-   <script src="popup.js"></script>
+<div class="container">
+    <header>
+        <div style="text-align: center">
+            <img class="header-picture" src="spoderman.png" alt="Header Picture">
+            <p class="title"><b>Spider Senses</b></p>
+            <p class="description">Please select one that applies to you:</p>
+        </div>
+    </header>
+    <div class="form-inline">
+        <img src="spoderblind.png" alt="Color Blind" id="spoderblind">
+        <label for="spoderblind" class="spoderblind-text">Color Blind</label>
+    </div>
+    <div class="form-inline">
+        <img src="spodersurd.png" alt="Hearing Impairment" id="spoderdeaf">
+        <label for="spoderdeaf" class="spoderdeaf-text">Hearing Impairment</label>
+    </div>
+    <div class="form-inline">
+        <img src="spodertouch.png" alt="Motor Incapicity " id="spodertard">
+        <label for="spodertard" class="spodertard-text">Motor Incapicity</label>
+    </div>
+</div>
+
+<script src="background.js"></script>
+<script src="popup.js"></script>
+<script src="color_blind.js"></script>
 </body>
 </html>

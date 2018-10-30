@@ -1,7 +1,7 @@
 {
   "name": "Spider senses",
   "version": "1.0",
-  "description": "whatevr",
+  "description": "Web extension for helping people browsing web",
   "permissions": [
       "declarativeContent",
       "storage",
