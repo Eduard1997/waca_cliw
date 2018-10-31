@@ -1,13 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <script src="background.js"></script>
     <title>Spider Senses</title>
     <meta charset="utf-8"/>
     <link rel="stylesheet" type="text/css" media="screen" href="main.css"/>
     <link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
 </head>
 <body>
-<div class="container">
+<div class="container" id="front-section">
     <header>
         <div style="text-align: center">
             <img class="header-picture" src="spoderman.png" alt="Header Picture">
@@ -29,8 +30,25 @@
     </div>
 </div>
 
-<script src="background.js"></script>
-<script src="popup.js"></script>
-<script src="color_blind.js"></script>
+<div class="container" id="blind-section" style="display: none">
+    <header>
+        <div style="text-align: center">
+            <img class="header-picture" src="spoderman.png" alt="Header Picture">
+            <p class="title"><b>Spider Senses</b></p>
+            <p class="description">Please select a color you need:</p>
+        </div>
+    </header>
+    <div style="text-align: center">
+        <button type="button" style="background-color: red; margin-bottom: 10px" id="red-button"></button>
+        <br>
+        <button type="button" style="background-color: dodgerblue; margin-bottom: 10px" id="blue-button"></button>
+        <br>
+        <button type="button" style="background-color: green" id="green-button"></button>
+    </div>
+    <div>
+        <button type="button" id="home-page-btn">Home</button>
+    </div>
+</div>
+
 </body>
 </html>

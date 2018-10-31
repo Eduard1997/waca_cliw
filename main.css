@@ -85,3 +85,48 @@ body {
     font-family: 'Josefin Sans', sans-serif;
     font-size: 17px;
 }
+#home-page-btn{
+    color: #333;
+    background-color: #fff;
+    border-color: #ccc;
+    display: inline-block;
+    padding: 6px 12px;
+    margin-bottom: 0;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.42857143;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-image: none;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    margin-top: 3rem;
+    margin-left: 1rem;
+}
+#home-page-btn:hover {
+    color: #333;
+    background-color: #e6e6e6;
+    border-color: #adadad;
+    text-decoration: none;
+}
+#red-button{
+     height: 30px;
+     width: 30px;
+}
+#blue-button{
+    height: 30px;
+    width: 30px;
+}
+#green-button{
+    height: 30px;
+    width: 30px;
+    margin-right: 3px;
+}
