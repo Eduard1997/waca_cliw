@@ -30,7 +30,18 @@ window.addEventListener('load', function() {
         document.getElementById('front-section').style.display = 'block';
         document.getElementById('blind-section').style.display = 'none';
     });
+    let blind_changes = document.getElementById("apply-blind-changes");
+    blind_changes.addEventListener('click', saveBlindChanges);
 });
+
+function saveBlindChanges() {
+    let x = document.getElementById("check1").value;
+    chrome.tabs.query({currentWindow: true, active: true}, function (tabs){
+        var activeTab = tabs[0];
+        chrome.tabs.sendMessage(activeTab.id, {"message": "start"});
+    });
+}
+
 
 
 
