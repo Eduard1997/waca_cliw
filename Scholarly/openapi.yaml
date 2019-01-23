@@ -1,0 +1,126 @@
+openapi: 3.0.0
+info:
+  title: PhyOR Scanner API
+  description: >-
+    A RESTful API for the PhyOR project. Supports the PUT, POST, DELETE etc.
+    operations.
+  version: '0.5'
+  contact:
+    name: Alexandru Miron
+    email: alexandru.miron@info.uaic.ro
+    url: 'https://www.linkedin.com/in/miron-alexandru/'
+tags:
+  - name: GitHub Link
+    description: Link to the project repository on GitHub
+    externalDocs:
+      url: 'https://github.com/mironalex/phyor'
+      description: 'This is where most of the work can be found'
+  - name: Project Link
+    description: Link to the project site
+    externalDocs:
+      url: 'https://phyor.me'
+      description: 'This is where the project is (currently) deployed'
+
+  /all:
+    get:
+      description: Returns a list of all barcodes available in the database.
+      operationId: getAllBarcodes
+      responses:
+        '200':
+          description: Got all barcodes
+          content:
+            application/json:
+              examples:
+                ex1:
+                  value: ["barcode1", "barcode2"]
+        default:
+          description: Error
+          content:
+            application/json:
+              schema:
+                $ref: '/error'
+  /{id}:
+    GET:
+      description: Returns all info for the {id} barcode
+      operationId: getId
+      parameters:
+        - name: barcode
+          description: This barcode gets got
+          required: true
+          in: path
+          schema:
+            type: string
+      responses:
+        '200':
+          description: Successfuly got
+          content:
+            application/ld+json:
+              music:
+                value: { }
+        default:
+          description: Error
+          content:
+            application/json:
+              schema:
+                $ref: '/error'
+    PUT:
+      description: Replace the info for the {id} barcode
+      operationId: putId
+      parameters:
+        - name: barcode
+          description: This barcode gets put
+          required: true
+          in: path
+          schema:
+            type: string
+      responses:
+        '200':
+          description: Successfuly put
+        '404':
+          description: No such id
+        default:
+          description: Error
+          content:
+            application/json:
+              schema:
+                $ref: '/error'
+    POST:
+      description: Post a new product with the {id} barcode
+      operationId: postId
+      parameters:
+        - name: barcode
+          description: This barcode gets posted
+          required: true
+          in: path
+          schema:
+            type: string
+      responses:
+        '201':
+          description: Successfuly created
+        default:
+          description: Error
+          content:
+            application/json:
+              schema:
+                $ref: '/error'
+    DELETE:
+      description: Delete an {id} barcode and its information
+      operationId: deleteId
+      parameters:
+        - name: barcode
+          description: This barcode gets deleted
+          required: true
+          in: path
+          schema:
+            type: string
+      responses:
+        '204':
+          description: Successfuly deleted
+        '404':
+          description: Barcode doesn't exist
+        default:
+          description: Error
+          content:
+            application/json:
+              schema:
+                $ref: '/error'

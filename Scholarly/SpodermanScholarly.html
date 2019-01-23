@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+	<title>Spider Senses Scholarly HTML Technical Report</title>
+	<link rel="stylesheet" href="styles.css">
+</head>
+
+<article resource="#" typeof="schema:ScholarlyArticle">
+
+	<header>
+		<div class="logo">
+			<img src="spoderman.jpg" width="65%" height="65%" alt="Spider Senses Logo">
+		</div>
+
+		<h1 property="schema:name" id="title">Spider Senses Scholarly HTML Technical Report</h1>
+
+		<div role="contentinfo" id="content_info">
+			<!-- list of section elements each identified with a specific typeof attribute -->
+
+
+			<section typeof="sa:AuthorsList">
+				<h2>Authors</h2>
+				<ul>
+					<li typeof="sa:ContributorRole" property="schema:author">
+						<span typeof="schema:Person" resource="https://www.facebook.com/alm.teo">
+							<meta property="schema:givenName" content="Teodor">
+							<meta property="schema:familyName" content="Almasanu">
+							<span property="schema:name">Teodor Almasanu</span>
+						</span>
+						<ul>
+							<li property="schema:roleContactPoint" typeof="schema:ContactPoint">
+								<a href="mailto:almmondducherr" property="schema:email">almmondducherr@yahoo.com</a>
+							</li>
+						</ul>
+					</li>
+
+					<li typeof="sa:ContributorRole" property="schema:author">
+						<span typeof="schema:Person" resource="https://www.facebook.com/Eduard.Ghergheluca97">
+							<meta property="schema:givenName" content="Eduard">
+							<meta property="schema:familyName" content="Ghergheluca">
+							<span property="schema:name">Eduard Ghergheluca</span>
+						</span>
+						<ul>
+							<li property="schema:roleContactPoint" typeof="schema:ContactPoint">
+								<a href="mailto:ghergheluca_edi@yahoo.com" property="schema:email">ghergheluca_edi@yahoo.com</a>
+							</li>
+						</ul>
+					</li>
+				</ul>
+			</section> <!-- autori -->
+
+			<section>
+				<section typeof="sa:Abstract" role="doc-abstract" id="abstract">
+					<h2> Abstract </h2>
+					<p>
+						Spider Senses is a Web Extension that helps people with visual, auditive and motor disabilities to view, hear or read webpages that doesn't support this kind of access.
+					</p>
+					<p>
+						The user will be prompted to choose one of the options of the extension's option, depending on the user's disability.
+					</p>
+					<p>
+						The extension will also provide the user with the ability to make settings according to his/her preferences.
+					</p>
+
+				</section>
+			</section>
+		</div>
+	</header>
+
+	<section id="table_of_contents">
+		<h2>Table of contents</h2>
+		<ul>
+			<li>
+				1. Introduction
+			</li>
+			<li>
+				2. Project structure
+			</li>
+			<li>
+				3. The visual aspect
+				<ul>
+					<li>
+						3.1. The Home page
+					</li>
+					<li>
+						3.2. The Color Blind page
+					</li>
+					<li>
+						3.3. The Hearing Impairment page
+					</li>
+					<li>
+						3.4. The Motor Incapacity page
+					</li>
+				</ul>
+			</li>
+
+			<li>
+				4. Project progress
+				<ul>
+					<li>
+						4.1. It all started with a manifest
+					</li>
+					<li>
+						4.2. Main HTML Page
+					</li>
+					<li>
+						4.3. Color Blind Pag
+					</li>
+					<li>
+						4.4. Hearing Impairment Page
+					</li>
+					<li>
+						4.5. Hearing Impairment Page
+					</li>
+					<li>
+						4.6. Hearing Impairment Page
+					</li>
+				</ul>
+			</li>
+
+			<li>
+				5. References
+			</li>
+			<li>
+				6. Final remarks
+			</li>
+		</ul>
+	</section> <!-- table_of_contents -->
+
+	<!-- ###################################################################################################################################################### -->
+
+	<section role="doc-introduction" id="introduction">
+		<h2>1. Introduction</h2>
+			<p>
+				On Spider Senses, users can select their disability, and the extension
+				will make it easier for them to acces the selected webpage.
+			 	Can't see all the colors? Can't hear well? Can't interact with your keyboard/mouse accordingly? Make it happen, with Spider Senses.
+			</p>
+			<p>
+				The visual aspect of the extension is kept as smooth and straightforward as possible, using a simple color scheme and an
+				intuitive menu to cycle through.
+			</p>
+	</section> <!-- introduction -->
+
+	<!-- ###################################################################################################################################################### -->
+
+	<section id="structure">
+		<h2>2. Project Structure</h2>
+			<p>
+				Spider Senses extension aims to provide a smooth and enjoyable experience for the user.
+			</p>
+			<p>
+				Spider Senses has at it's core a manifest.json file (it's the main "ingredient") of an web extension.
+				When the extension is clicked it opens with the Home page, and depending on your handicap you can select
+				the most suitable option for you: Color Blind, Hearing Impairment or Motor Incapacity.
+			</p>
+			<p>
+				The modules of the project are presented in the following schema:
+			</p>
+
+			<img src="modules.jpg" width="200%" height="200%" typeof="sa:image" />
+	</section> <!-- structure -->
+
+	<!-- ###################################################################################################################################################### -->
+
+
+	<section class="visual">
+		<h2>3. The visual aspect</h2>
+		<p>
+			The Spider Senses project interface consists of 4 pages (views), detailed below:
+		</p>
+		<section class="visual, sub">
+			<h2>3.1. Home page </h2>
+				<p>
+					The home page is the landing page of the application, providing a list of 3 functions that it has for people with disabilities.
+				</p>
+		</section>
+
+		<section class="visual, sub">
+			<h2>3.2. Color Blind Page </h2>
+				<p>
+					This is the page where people that are suffering of color blindness should go.
+					This page would help them select the colors of the pages until they can see all of it.
+					There is also provided a button to undo all the changes made, and one for returning to the Home page of the extension.
+				</p>
+		</section>
+
+		<section class="visual, sub">
+			<h2>3.3. Hearing Impairment </h2>
+				<p>
+					With this option enabled, entering on an You Tube video will automatically
+					activate the video's subtitles and it will raise the volume of the page,
+					so the people with hearing impairment will have an easier time to hear what is actually going on.
+					On this page there is also a button to undo all the changes made, and one for returning to the Home page of the extension.
+				</p>
+		</section>
+
+		<section class="visual, sub">
+			<h2>3.4. Motor Incapacity </h2>
+				<p>
+					Choosing this option will open an interface that will access users camera
+					and read on users face gestures, some js
+					function will trigger for scrolling up and down a
+					page or for increasing the volume etc.
+					On this page there is also a button to undo all the changes made, and one for returning to the Home page of the extension.
+				</p>
+		</section>
+	</section> <!-- visual aspect -->
+
+	<!-- ###################################################################################################################################################### -->
+
+
+	<section class="progress">
+		<h2>4. Project progress</h2>
+		<p>
+			We started with the ideea that we want to make an extention that could really help people with disabilities (people with color blindness, hearing impairment or motor incapacity).
+		</p>
+		<section class="progress, sub">
+			<h2>4.1. It all started with a manifest </h2>
+				<p>
+					The project began with the creation of the manifest.json file which is the fundation of an extension. In our case this extension works only for Google Chrome.
+					In here we designed how the app will look in Google Extensions page. We put the mascot (little Spidey), the version, and a short description of the app.
+				</p>
+		</section>
+
+		<section class="progress, sub">
+			<h2>4.2. Main HTML Page </h2>
+				<p>
+					The main page, or the home page, was the one that followed.
+					We selected a background image that we think that is most visible for the color blind people and added the Spidey Senses mascot on it.
+					We added then buttons that represent the actual choices of the incapacitated user: Spoder-Blind, Spoder-Deaf and Spoder-Motor.
+					Each of the buttons has a on-click listener that erases all the content of the current page and then displays the selected button options.
+				</p>
+		</section>
+
+		<section class="progress, sub">
+			<h2>4.3. Color Blind Page </h2>
+				<p>
+					T.
+				</p>
+		</section>
+
+		<section class="progress, sub">
+			<h2>4.4. Hearing Impairment Page </h2>
+				<p>
+					W.
+				</p>
+		</section>
+
+		<section class="progress, sub">
+			<h2>4.5. Motor Incapacity Page </h2>
+				<p>
+					C.
+				</p>
+		</section>
+
+
+
+
+
+
+		</section>
+
+
+	<!-- ###################################################################################################################################################### -->
+
+	<section class="backend">
+		<h2>5. References</h2>
+		<dt id="ref-Manifests">Manifest</dt>
+		<p>
+			<span typeof="schema:citation" typeof="schema:ScholarlyArticle" resource="https://developers.google.com/web/fundamentals/web-app-manifest/">
+				<cite property="schema:name"> <a href="https://developers.google.com/web/fundamentals/web-app-manifest/"> The Web App Manifest </a></cite>
+			</span>
+		</p>
+
+		<dt id="ref-Manifests">Extensions</dt>
+		<p>
+			<span typeof="schema:citation" typeof="schema:ScholarlyArticle" resource="https://developer.chrome.com/extensions/manifest">
+				<cite property="schema:name"> <a href="https://developer.chrome.com/extensions/manifest"> Manifest File Format </a></cite>
+			</span>
+		</p>
+
+
+	</section>
+
+
+	<!-- ###################################################################################################################################################### -->
+
+	<section class="conclusion" role="-conc">
+		<h2>6. Final remarks</h2>
+		<p>
+			Spider Senses is an interesting and challenging endeavour that made us change some assumptions about how projects should be developed and compelled us to
+			rethink how some people have to interact with webpages across the internet.
+		</p>
+	</section>
+
+</article>
+
+</html>

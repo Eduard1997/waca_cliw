@@ -1,0 +1,38 @@
+html {
+	margin-left: 5%;
+	margin-right: 50%;
+}
+
+#abstract  p, #introduction p, #structure p, .visual p, .progress p , .backend p, .conclusion p{
+	font-size: 20px;
+	text-align: left;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+#title {
+	font-size: 30px;
+}
+
+#content_info section ul li{
+	font-size: 18px;
+	padding-bottom: 10px;
+}
+
+#table_of_contents ul li {
+	font-size: 20px;
+	padding-bottom: 10px;
+}
+
+li {
+	padding-top: 10px;
+}
+
+.sub {
+	/* background-color: red; */
+	padding-left: 5%;
+}
+
+.conclusion {
+	padding-bottom: 10%;
+}
