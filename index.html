@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <script src="background.js"></script>
     <title>Spider Senses</title>
     <meta charset="utf-8"/>
     <link rel="stylesheet" type="text/css" media="screen" href="main.css"/>
@@ -30,7 +29,7 @@
     </div>
 </div>
 
-<div class="container" id="blind-section" style="display: none">
+<!--<div class="container" id="blind-section" style="display: none">
     <header>
         <div style="text-align: center">
             <img class="header-picture" src="spoderman.png" alt="Header Picture">
@@ -48,9 +47,38 @@
     <div>
         <button type="button" id="home-page-btn">Home</button>
     </div>
+</div>-->
+
+<div class="container" id="blind-section" style="display: none">
+    <header>
+        <div style="text-align: center">
+            <img class="header-picture" src="spoderman.png" alt="Header Picture">
+            <p class="title"><b>Spider Senses</b></p>
+            <p class="description">Please select your preferences:</p>
+        </div>
+    </header>
+   <p class="blind-subtitle">What sections of the page are hard <br>for you to see?</p>
+    <label class="checkbox-inline">
+        <input type="checkbox" name="paragraph" value="background_color"> Background Color
+    </label>
+    <label class="checkbox-inline">
+        <input type="checkbox" name="paragraph" value="paragraph"> Paragraph
+    </label>
+    <label class="checkbox-inline">
+        <input type="checkbox" name="paragraph" value="link"> Links
+    </label>
+    <label class="checkbox-inline">
+        <input type="checkbox" name="font_color" value="font_color"> Font Color
+    </label>
+        <p class="blind-subtitle">Please tell us what color do you want to change</p>
+        <input style="margin-left: 10px" type="text" name="choose_color">
+    <div>
+        <button type="button" id="home-page-btn">Home</button>
+    </div>
+    <p class="blind-subtitle"></p>
+
 </div>
 
-
-
+<script src="background.js"></script>
 </body>
 </html>
