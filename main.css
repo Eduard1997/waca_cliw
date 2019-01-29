@@ -184,4 +184,10 @@ body {
 .btn:hover {
     text-decoration: none;
 }
+#other_section {
+    margin-left: 13px;
+}
+#revert-changes{
+    margin-left: 8px;
+}
 

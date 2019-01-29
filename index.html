@@ -68,14 +68,22 @@
         <input type="checkbox" id="links" value="links"> Links
     </label>
     <label class="checkbox-inline">
-        <input style="margin-left: 84px;" type="checkbox" id="links" value="font_color"> Font Color
+        <input style="margin-left: 84px;" type="checkbox" id="font_color" value="font_color"> Font Color
     </label>
-        <p class="blind-subtitle">Please tell us what color do you want to change</p>
-        <input style="margin-left: 10px" type="text" name="choose_color">
-    <p class="blind-subtitle">Please choose a color to replace the one you need</p>
+    <div class="form-inline">
+        <label class="checkbox-inline">
+            <input type="checkbox" id="other" value="other"> Other
+        </label>
+        <input type="text" id="other_section" style="display: none">
+    </div>
+
+        <!--<p class="blind-subtitle">Please tell us what color do you want to change</p>
+        <input style="margin-left: 10px" type="text" name="choose_color">-->
    <div class="form-inline">
-       <input style="position: relative;left: 86px; top: 2px;" type="color" value="black" id="color-picker"/>
-       <button type="button" style="margin-left: 101px;" class="btn btn-sm btn-info" id="apply-blind-changes">Save changes</button>
+       <p class="blind-subtitle">Please choose a color to replace the one you need</p>
+       <input style="position: relative;left: 27px; top: 2px;" type="color" value="black" id="color-picker"/>
+       <button type="button" style="margin-left: 34px;" class="btn btn-sm btn-info" id="apply-blind-changes">Save changes</button>
+       <button type="button" class="btn btn-sm btn-info" id="revert-changes">Revert changes</button>
    </div>
     <div>
         <button style="position: relative;top: 30px; left: 125px;" type="button" class="btn btn-sm btn-info" id="home-page-btn">Home</button>
